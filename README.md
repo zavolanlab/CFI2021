@@ -3,6 +3,7 @@ move into it with:
 ```bash
 git clone https://github.com/zavolanlab/CFI2021.git
 cd CFI2021
+Scripts for running KSEA analysis are located in the folder `KSEA_Phospho_Proteomics_Analysis`.
 ```
 To reproduce Fig. S3, run the following `R` script:
 ```bash
