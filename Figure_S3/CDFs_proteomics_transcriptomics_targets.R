@@ -27,11 +27,12 @@ p1<-ggplot(df, aes(x=log2ratio_CF125_KD, color=type)) +
   stat_ecdf() + xlim(-0.5,0.5) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(25-KD/Control)")+
   ylab("Cumulative distribution")+
   annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,2)),size=3, family="Helvetica")
@@ -48,11 +49,12 @@ p2<-ggplot(df, aes(x=log2ratio_CF168_KD, color=type)) +
   stat_ecdf()+ xlim(-0.5,0.5) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(68-KD/Control)")+
   ylab("Cumulative distribution")+
   annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,5)),size=3, family="Helvetica")
@@ -68,11 +70,12 @@ df <- data.frame(type=c(rep("target",length(tar_lf)),rep("nontarget",length(nont
 p3<-ggplot(df, aes(x=log2ratio_CF125_OE, color=type)) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(25-OE/Control)")+
   ylab("Cumulative distribution")+
   stat_ecdf()+ xlim(-0.5,0.5) +
@@ -89,11 +92,12 @@ df <- data.frame(type=c(rep("target",length(tar_lf)),rep("nontarget",length(nont
 p4<-ggplot(df, aes(x=log2ratio_CF168_OE, color=type)) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(68-OE/Control)")+
   ylab("Cumulative distribution")+
   stat_ecdf()+ xlim(-0.5,0.5) +
@@ -116,11 +120,12 @@ p1<-ggplot(df, aes(x=log2ratio_CF125_KD, color=type)) +
   stat_ecdf() + xlim(-1,1) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(25-KD/Control)")+
   ylab("Cumulative distribution")+
   annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,8)),size=3, family="Helvetica")
@@ -137,14 +142,15 @@ p2<-ggplot(df, aes(x=log2ratio_CF168_KD, color=type)) +
   stat_ecdf() + xlim(-1,1) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(68-KD/Control)")+
   ylab("Cumulative distribution")+
-  annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,8)),size=3, family="Helvetica")
+  annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,12)),size=3, family="Helvetica")
 p2
 
 # CFIm25 OE
@@ -158,11 +164,12 @@ p3<-ggplot(df, aes(x=log2ratio_CF125_OE, color=type)) +
   stat_ecdf() + xlim(-1,1) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(25-OE/Control)")+
   ylab("Cumulative distribution")+
   annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,2)),size=3, family="Helvetica")
@@ -179,11 +186,12 @@ p4<-ggplot(df, aes(x=log2ratio_CF168_OE, color=type)) +
   stat_ecdf() + xlim(-1,1) +
   theme_bw()+
   scale_color_manual(values=c("red","darkblue"))+
-  theme(panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
+  theme(legend.title = element_blank(),
+    panel.grid.major = element_blank(),panel.grid.minor = element_blank(),
         axis.text.x = element_text(color="black", size=8, family="Helvetica"),
         axis.text.y = element_text(color="black", size=8, family="Helvetica"),
-        axis.title.x = element_text(color="black", size=9, family="Helvetica"),
-        axis.title.y = element_text(color="black", size=9, family="Helvetica"))+
+        axis.title.x = element_text(color="black", size=8, family="Helvetica"),
+        axis.title.y = element_text(color="black", size=8, family="Helvetica"))+
   xlab("log2(68-OE/Control)")+
   ylab("Cumulative distribution")+
   annotate("text", x=-0.3, y=0.8, label= paste0("p=",round(t$p.value,2)),size=3, family="Helvetica")
