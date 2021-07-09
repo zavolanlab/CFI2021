@@ -4,6 +4,10 @@ move into it with:
 git clone https://github.com/zavolanlab/CFI2021.git
 cd CFI2021
 ```
+
+All the analyses related to transcripts' 3'ends are gathered in the notebook: `Terminal_Exons_Analysis/report.ipynb`.  
+Please follow the code there to reproduce plots presented in Fig. 1.
+
 Scripts for running KSEA analysis are located in the folder `KSEA_Phospho_Proteomics_Analysis`.
 
 To reproduce Fig. S3, run the following `R` script:
