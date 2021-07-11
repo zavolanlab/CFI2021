@@ -5,6 +5,8 @@ git clone https://github.com/zavolanlab/CFI2021.git
 cd CFI2021
 ```
 
+Exact commands related to RNA-Seq data processing are described in `Preprocessing/README.md`.
+
 All the analyses related to transcripts' 3'ends are gathered in the notebook: `Terminal_Exons_Analysis/report.ipynb`.  
 Please follow the code there to reproduce plots presented in Fig. 1.
 
