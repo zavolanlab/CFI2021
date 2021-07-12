@@ -1,0 +1,35 @@
+R version 3.6.0 (2019-04-26)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+
+Matrix products: default
+BLAS/LAPACK: {...}/OpenBLAS/0.3.1-GCC-7.3.0-2.30/lib/libopenblas_sandybridgep-r0.3.1.so
+
+locale:
+ [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C               LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8     LC_MONETARY=en_US.UTF-8   
+ [6] LC_MESSAGES=en_US.UTF-8    LC_PAPER=en_US.UTF-8       LC_NAME=C                  LC_ADDRESS=C               LC_TELEPHONE=C            
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+
+attached base packages:
+ [1] grid      parallel  stats4    stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] GenomicAlignments_1.20.0    Rsamtools_2.0.0             Biostrings_2.52.0           XVector_0.24.0              SummarizedExperiment_1.14.0
+ [6] DelayedArray_0.10.0         BiocParallel_1.18.0         matrixStats_0.54.0          GenomicFeatures_1.36.0      AnnotationDbi_1.46.0       
+[11] Biobase_2.44.0              biomaRt_2.40.0              Gviz_1.28.0                 rtracklayer_1.44.0          GenomicRanges_1.36.0       
+[16] GenomeInfoDb_1.20.0         IRanges_2.18.0              S4Vectors_0.22.0            BiocGenerics_0.30.0         optparse_1.6.2             
+
+loaded via a namespace (and not attached):
+ [1] ProtGenerics_1.16.0      bitops_1.0-6             bit64_0.9-7              RColorBrewer_1.1-2       progress_1.2.2           httr_1.4.0              
+ [7] tools_3.6.0              backports_1.1.4          R6_2.4.0                 rpart_4.1-15             Hmisc_4.2-0              DBI_1.0.0               
+[13] lazyeval_0.2.2           colorspace_1.4-1         nnet_7.3-12              tidyselect_0.2.5         gridExtra_2.3            prettyunits_1.0.2       
+[19] bit_1.1-14               curl_3.3                 compiler_3.6.0           htmlTable_1.13.1         scales_1.0.0             checkmate_1.9.3         
+[25] stringr_1.4.0            digest_0.6.18            foreign_0.8-71           base64enc_0.1-3          dichromat_2.0-0          pkgconfig_2.0.2         
+[31] htmltools_0.3.6          ensembldb_2.8.0          BSgenome_1.52.0          htmlwidgets_1.3          rlang_0.3.4              rstudioapi_0.10         
+[37] RSQLite_2.1.1            acepack_1.4.1            dplyr_0.8.1              VariantAnnotation_1.30.0 RCurl_1.95-4.12          magrittr_1.5            
+[43] GenomeInfoDbData_1.2.1   Formula_1.2-3            Matrix_1.2-17            Rcpp_1.0.1               munsell_0.5.0            stringi_1.4.3           
+[49] zlibbioc_1.30.0          plyr_1.8.4               blob_1.1.1               crayon_1.3.4             lattice_0.20-38          splines_3.6.0           
+[55] hms_0.4.2                knitr_1.22               pillar_1.4.0             XML_3.98-1.19            glue_1.3.1               biovizBase_1.32.0       
+[61] latticeExtra_0.6-28      data.table_1.12.2        gtable_0.3.0             getopt_1.20.3            purrr_0.3.2              assertthat_0.2.1        
+[67] ggplot2_3.1.1            xfun_0.7                 AnnotationFilter_1.8.0   survival_2.44-1.1        tibble_2.1.1             memoise_1.1.0           
+[73] cluster_2.0.9
